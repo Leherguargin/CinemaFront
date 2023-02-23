@@ -6,7 +6,7 @@
   "tasks": {
     "ng serve": {
       "name": "ng serve",
-      "command": "ng serve",
+      "command": "ng serve --disable-host-check",
       "runAtStart": true
     },
     "npm install": {
