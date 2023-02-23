@@ -4,7 +4,7 @@
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
-    "ng serve": {
+    "npm start": {
       "name": "ng serve",
       "command": "ng serve --disable-host-check",
       "runAtStart": true
@@ -13,7 +13,7 @@
       "name": "npm install",
       "command": "npm install"
     },
-    "ng add": {
+    "npm ng add": {
       "name": "ng add @angular/material",
       "command": "ng add @angular/material"
     }
