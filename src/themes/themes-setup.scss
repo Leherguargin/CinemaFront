@@ -1,0 +1,19 @@
+@use '@angular/material' as mat;
+@use 'dark' as dark;
+@use 'light' as light;
+
+@include mat.core();
+
+// Apply the dark theme by default
+@include mat.core-theme(dark.$dark-theme);
+@include mat.button-theme(dark.$dark-theme);
+
+//Apply the light theme only when the user prefers light themes.
+@media (prefers-color-scheme: light) {
+  // Use the `-color` mixins to only apply color styles without reapplying the same
+  // typography and density styles.
+  @include mat.core-color(light.$light-theme);
+  @include mat.button-color(light.$light-theme);
+}
+
+//TODO dodaj kolejne theme oraz zmianę ich z poziomu layoutu (zostawiając preferowany jako ten z systemu operacyjnego)
