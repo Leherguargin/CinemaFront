@@ -2,9 +2,23 @@
   flex: 1 1 auto;
 }
 
-.secound-row {
+.second-row {
   background-color: orange;
   color: black;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+}
+
+.menu-option {
+  background-color: orange;
+  color: black;
+  border: none;
+  box-shadow: none;
+  padding: 15px;
+  border-left: 1px gray solid;
+  border-top: 0;
+
+  :hover {
+    color: white;
+  }
 }

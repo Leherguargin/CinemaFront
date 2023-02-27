@@ -1,24 +1,37 @@
 <mat-toolbar color="primary">
+
   <mat-toolbar-row>
-    <span>cinema</span>
-       <span class="spacer"></span>
-    <button mat-icon-button color="primary" class="menu-icon" aria-label="Menu-button with menu icon">
+    <span class="logo">cinema</span>
+    <span class="spacer"></span>
+    <button mat-icon-button aria-label="Menu-button with menu icon">
       <mat-icon>menu</mat-icon>
     </button>
   </mat-toolbar-row>
-  <mat-toolbar-row class="secound-row">
-    <button mat-raised-button color="accent">Repertuar</button>
-    <button mat-stroked-button color="primary">oferty</button>
-    <button mat-stroked-button color="primary">BLOG</button>
-    <button mat-stroked-button color="primary">UNLIMITED</button>
-    <button mat-stroked-button color="primary">4DX</button>
-    <button mat-stroked-button color="primary">IMAX</button>
-    <button mat-stroked-button color="primary">SCREEN X</button>
-    <button mat-stroked-button color="primary">VIP</button>
-    <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
-        <mat-icon>more_vert</mat-icon>
-      </button>
+
+  <mat-toolbar-row class="second-row">
+    <div class="container-md second-row">
+      <mat-divider [vertical]="true"></mat-divider>
+      <button class="btn">REPERTUAR</button>
+      <mat-divider [vertical]="true"></mat-divider>
+      <button class="btn">OFERTY</button>
+      <mat-divider [vertical]="true"></mat-divider>
+      <button class="btn">BLOG</button>
+      <mat-divider [vertical]="true"></mat-divider>
+      <button class="btn">UNLIMITED</button>
+      <mat-divider [vertical]="true"></mat-divider>
+      <button class="btn">4DX</button>
+      <mat-divider [vertical]="true"></mat-divider>
+      <button class="btn">IMAX</button>
+      <mat-divider [vertical]="true"></mat-divider>
+      <button class="btn">SCREEN X</button>
+      <mat-divider [vertical]="true"></mat-divider>
+      <button class="btn">VIP</button>
+      <mat-divider [vertical]="true"></mat-divider>
+    </div>
   </mat-toolbar-row>
 </mat-toolbar>
+
+
+
 
 <router-outlet></router-outlet>
