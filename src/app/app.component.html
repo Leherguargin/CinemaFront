@@ -1,15 +1,38 @@
-<mat-toolbar color="primary">
+<mat-toolbar>
 
   <mat-toolbar-row>
     <span class="logo">cinema</span>
     <span class="spacer"></span>
-    <button mat-icon-button aria-label="Menu-button with menu icon">
+    <button mat-button>
+      <mat-icon>location_on</mat-icon>
+      Wybierz swoje kino
+    </button>
+
+    <button mat-button>
+      <mat-icon>login</mat-icon>
+      Logowanie
+    </button>
+
+    <button mat-button>
+      <mat-icon>how_to_reg</mat-icon>
+      Rejestracja
+    </button>
+
+    <mat-form-field class="search">
+      <mat-label>Search</mat-label>
+      <input matInput type="text" [(ngModel)]="searchText">
+      <button *ngIf="searchText" matSuffix mat-icon-button aria-label="Clear" (click)="searchText=''">
+        <mat-icon>search</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <button class="menu-btn" mat-icon-button aria-label="Menu-button with menu icon">
       <mat-icon>menu</mat-icon>
     </button>
   </mat-toolbar-row>
 
   <mat-toolbar-row class="second-row">
-    <div class="container-md second-row">
+    <div class="second-row-container">
       <mat-divider [vertical]="true"></mat-divider>
       <button class="btn">REPERTUAR</button>
       <mat-divider [vertical]="true"></mat-divider>
@@ -31,7 +54,14 @@
   </mat-toolbar-row>
 </mat-toolbar>
 
+<form class="example-form">
 
+  <mat-form-field class="width-20">
+    <mat-label>First name</mat-label>
+    <input matInput>
+  </mat-form-field>
+
+</form>
 
 
 <router-outlet></router-outlet>

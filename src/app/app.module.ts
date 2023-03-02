@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
@@ -23,16 +23,16 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatCardModule} from '@angular/material/card';
 import {MatSidenavModule} from '@angular/material/sidenav';
-import { TableComponent } from './component/schematics/table/table.component';
-import { MatTableModule } from '@angular/material/table';
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatSortModule } from '@angular/material/sort';
-import { DashboardComponent } from './component/schematics/dashboard/dashboard.component';
-import { MatGridListModule } from '@angular/material/grid-list';
-import { TreeComponent } from './component/schematics/tree/tree.component';
-import { MatTreeModule } from '@angular/material/tree';
-import { DragAndDropComponent } from './component/schematics/drag-and-drop/drag-and-drop.component';
-import { DragDropModule } from '@angular/cdk/drag-drop';
+import {TableComponent} from './component/schematics/table/table.component';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSortModule} from '@angular/material/sort';
+import {DashboardComponent} from './component/schematics/dashboard/dashboard.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {TreeComponent} from './component/schematics/tree/tree.component';
+import {MatTreeModule} from '@angular/material/tree';
+import {DragAndDropComponent} from './component/schematics/drag-and-drop/drag-and-drop.component';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -51,6 +51,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     LayoutModule,
+    DragDropModule,
+    FormsModule,
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
@@ -67,7 +69,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     MatSortModule,
     MatGridListModule,
     MatTreeModule,
-    DragDropModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

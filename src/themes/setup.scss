@@ -5,8 +5,18 @@
 @include mat.core();
 
 // Apply the dark theme by default
-@include mat.core-theme(dark.$dark-theme);
-@include mat.button-theme(dark.$dark-theme);
+//@include mat.core-theme(dark.$dark-theme);
+//@include mat.button-theme(dark.$dark-theme);
+
+// Or apply the light y default
+//@include mat.core-theme(light.$light-theme);
+//@include mat.button-theme(light.$light-theme);
+
+// or some prebuild theme
+//@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+//@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+//@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "~@angular/material/prebuilt-themes/purple-green.css";
 
 //Apply the light theme only when the user prefers light themes.
 @media (prefers-color-scheme: light) {
